@@ -29,14 +29,14 @@ function func(ex) {
 function findwinner(option) {
     let coption = generaterandom();
     if(coption === option){
-        comment.textContent = "Its a Tie";
+        comment.textContent = "Its a Tie,Both of you chose " + possibilities[option];
     }
     else if(option === 0 && coption === 2 || option === 1 && coption === 0 || option === 2 && coption === 1){
-        comment.textContent = "You Won";
+        comment.textContent = "You Won,You chose " + possibilities[option] + " and the Computer chose " + possibilities[coption];
         updatescore(playerscore++,computerscore);
     }
     else{
-        comment.textContent = "You Lost";
+        comment.textContent = "You Lost,You chose " + possibilities[option] + " and the Computer chose " + possibilities[coption];
         updatescore(playerscore,computerscore++);
     }
 }
