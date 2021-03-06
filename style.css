@@ -54,7 +54,7 @@ main .icons img {
     border-radius: 10px;
     
 }
-img:hover {
+.icons img:hover {
     transform: scale(1.25);
     cursor: pointer;
 }
